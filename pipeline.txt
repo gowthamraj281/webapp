@@ -18,12 +18,12 @@ pipeline {
          }
           stage ('package') {
             steps {
-                bat "mvn package" 
+                sh "mvn package" 
             }
          }
           stage ('Build') {
             steps {
-                sh "mvn install" 
+                bat "mvn install" 
             }
          }
     
