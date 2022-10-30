@@ -9,8 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
-          agent any
+        stage('error') {
           steps {
             sh 'echo "done"'
           }
@@ -19,7 +18,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'entered into step2'
       }
