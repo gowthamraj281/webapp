@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('update') {
+          steps {
+            sleep 25
+          }
+        }
+
       }
     }
 
